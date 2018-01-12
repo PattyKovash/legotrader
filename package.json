@@ -4,7 +4,10 @@
   "description": "Lego trading site",
   "main": "index.js",
   "dependencies": {
+    "aws-sdk": "^2.181.0",
+    "axios": "^0.17.1",
     "body-parser": "^1.18.2",
+    "cloudinary-react": "^1.0.4",
     "cookie-parser": "^1.4.3",
     "express": "^4.16.2",
     "express-session": "^1.15.6",
