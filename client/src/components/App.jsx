@@ -21,36 +21,6 @@ class App extends React.Component {
     };
   }
 
-  // poll server every second for new listings
-  componentDidMount() {
-    this.getListings();
-    setInterval(() => {
-      this.getListings
-    }, 1000)
-  }
-
-  handleCategoryClick(category) {
-    category = category || '';
-
-    console.log('My category', category);
-    this.setState({ category: category });
-    this.getListings();
-  }
-
-  getListings() {
-    $.ajax({
-      url: '/listings',
-      success: (listings) => {
-        this.setState({
-          listings: listings
-        })
-      },
-      error: (err) => {
-        console.log('Get listings error', err);
-      }
-    });
-  }
-
   render() {
     return (
       <Switch>
@@ -61,7 +31,7 @@ class App extends React.Component {
         <RouteProps path='/user-listings' component={ UserListings } listings={ this.state.listings }/> 
         <Route path='/view-listing' component={ ViewListing } listing={ this.selectedListing }/>
       </Switch>
-    )
+    );
   }
 }
 
