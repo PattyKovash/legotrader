@@ -1,6 +1,7 @@
 import React from 'react';
 import $ from 'jquery';
 import { Link, Redirect, Route } from 'react-router-dom';
+import Dropzone from 'react-dropzone';
 
 class NewListing extends React.Component {
 
