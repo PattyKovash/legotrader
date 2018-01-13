@@ -20,6 +20,7 @@
     "react-dom": "^16.2.0",
     "react-route-props": "^1.0.4",
     "react-router-dom": "^4.2.2",
+    "react-s3": "^1.2.3",
     "request": "^2.83.0"
   },
   "devDependencies": {

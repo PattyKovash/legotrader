@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-var tempProps = {color: 'red' }
+
+var tempProps = {color: 'red' };
+
 const Listings = (props) => (
   <div>
     <div className="container">
