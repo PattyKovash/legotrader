@@ -78,8 +78,10 @@ app.get('/auth/facebook/callback', passport.authenticate('facebook',
   {
     successRedirect: '/',
     failureRedirect: '/'
-  }
-));
+  }), (req, res) => {
+  // is this where I send back session info or user info to client????
+}
+);
 
 app.get('/listings', (req, res) => {
 
